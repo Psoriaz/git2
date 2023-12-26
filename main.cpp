@@ -15,15 +15,21 @@ int main() {
     cin >> operation;
 
     switch (operation) {
-    case '+':
-        cout << "Result: " << Function::add(a, b) << endl;
-        break;
-    case '-':
-        cout << "Result: " << Function::subtract(a, b) << endl;
-        break;
-    default:
-        cout << "Incorrect operation!" << endl;
-        break;
+        case '+':
+            cout << "Result: " << Function::add(a, b) << endl;
+            break;
+        case '-':
+            cout << "Result: " << Function::subtract(a, b) << endl;
+            break;
+        case '*':
+            cout << "Result: " << Function::multiply(a, b) << endl;
+            break;
+        case '/':
+            cout << "Result: " << Function::divide(a, b) << endl;
+            break;
+        default:
+            cout << "Incorrect operation!" << endl;
+            break;
     }
 
     return 0;
